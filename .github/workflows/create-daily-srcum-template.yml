@@ -38,10 +38,11 @@ jobs:
   
     - name: Send Notification to Discord
       run: |
-        DATE=$(date +'%y-%m-%d')
+        DATE=$(date +'%y-%m-%d' -d '9 hours')
         DISCORD_WEBHOOK_URL=${{ secrets.DISCORD_DAILY_WEBHOOK_URL }}
-        MESSAGE="${DATE} - 일일 보고 양식이 생성되었습니다."
+        MESSAGE="${DATE} - 일일 보고 양식이 생성되었습니다.\n[여기](https://github.com/ktb-23/daily-scrum/blob/main/${DATE}) 에서 바로 확인 가능합니다."
+        PAYLOAD=$(echo "{\"content\": \"${MESSAGE}\"}")
         curl -H "Content-Type: application/json" \
-             -d "{\"content\": \"${MESSAGE}\"}" \
+             -d "$PAYLOAD" \
              $DISCORD_WEBHOOK_URL
 
