@@ -18,4 +18,5 @@
 - python study를 위한 백준 알고리즘 문제 풀이 ([작업 내역](https://github.com/ktb-23/python-study/pull/23))
 
 ### 내일 할 작업
+- python study 내 다른 팀원 코드 리뷰 진행
 - react native 환경에 msw 적용하기
