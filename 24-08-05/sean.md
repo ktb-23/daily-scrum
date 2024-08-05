@@ -20,3 +20,5 @@
 ### 내일 할 작업
 - python study 내 다른 팀원 코드 리뷰 진행
 - react native 환경에 msw 적용하기
+- AWS SAA 자격증 스터디 밋업
+- AWS SAA 자격증 강의 수강
